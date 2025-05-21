@@ -45,3 +45,21 @@ console.log("User Category:", userCategory);
 let isAuthenticated = true;
 let authenticationStatus = isAuthenticated ? "Authenticated" : "Not authenticated";
 console.log("Authentication Status:", authenticationStatus);
+
+let person = "Employee";
+
+switch(person){
+    case "Employee":
+        useraccess = "you have access to dietary services";
+        break;
+    case "Enrolled Member":
+        useraccess = " ypu have access to dietary services and one-on-one interaction with dietician";
+        break;
+    case "Subscriber":
+        useraccess ="you have acess to partial access to facilitate Dietary Services only.";
+        break;
+    case "Non-Subscriber":
+        useraccess = "they need to enroll or at least subscribe first to avail this facility.";
+        break;
+}
+console.log(useraccess)
